@@ -1,0 +1,12 @@
+/* DIGITAL 7 */
+@font-face {
+  font-family: 'Digital-7';
+  src: url('digital-7/digital-7.eot');
+  src: url('digital-7/digital-7.eot?#iefix') format('embedded-opentype'),
+       url('digital-7/digital-7.woff2') format('woff2'),
+       url('digital-7/digital-7.woff') format('woff'),
+       url('digital-7/digital-7.ttf') format('truetype'),
+       url('digital-7/digital-7.svg#digital-7') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
