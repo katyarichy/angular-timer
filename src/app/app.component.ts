@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  logs = [];
-
   startTime;
   currentTime;
   offset = 0;
@@ -16,6 +14,8 @@ export class AppComponent {
 
   timer = 0;
   timerId;
+
+  logs = [];
 
   counter() {
     this.currentTime = new Date().getTime();
@@ -30,7 +30,8 @@ export class AppComponent {
     let seconds = timeString.getSeconds();
     let milliseconds = timeString.getMilliseconds();
 
-    return minutes + ':' + seconds + '.' + milliseconds;
+    // return minutes + ':' + seconds + '.' + milliseconds;
+    return `${minutes}:${seconds}.${milliseconds}`;
   }
 
   getTimeStringMinutes() {
@@ -71,7 +72,6 @@ export class AppComponent {
 
     this.offset = this.timer;
     clearTimeout(this.timerId);
-    this.timerActive = false;
   }
 
   onReset() {
